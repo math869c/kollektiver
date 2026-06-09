@@ -1,0 +1,88 @@
+const fs = require("fs");
+const path = require("path");
+
+const kollektiverPath = path.join(__dirname, "kollektiver.json");
+const outputFolder = path.join(__dirname, "kollektivet");
+
+const kollektiver = JSON.parse(fs.readFileSync(kollektiverPath, "utf8"));
+
+if (!fs.existsSync(outputFolder)) {
+  fs.mkdirSync(outputFolder);
+}
+
+function makeHtml(kollektiv) {
+  return `<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathias søger ${kollektiv.navn}</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+
+  <section id="intro" class="intro">
+    <h1 id="welcomeTitle">Hej!</h1>
+    <p>
+      Tusind tak fordi I tager jer tid til at læse min ansøgning.
+      Her kan I lære lidt mere om mig
+    </p>
+    <button onclick="startApplication()">Fortsæt</button>
+  </section>
+
+  <section id="mindmap" class="mindmap hidden">
+    <div class="center-person">
+      <img src="../../images/Mig_der_venter.jpg" alt="Mathias" />
+      <h1>Mathias, 27</h1>
+    </div>
+
+    <button class="thought box1" onclick="openBox('basal')">5 hurtige</button>
+    <button class="thought box2" onclick="openBox('faellesskab')">Fællesskab</button>
+    <button class="thought box3" onclick="openBox('renlig')">Renlighed</button>
+    <button class="thought box4" onclick="openBox('mad')">Mad & bagning</button>
+    <button class="thought box5" onclick="openBox('noerd')">Nørderi & hygge</button>
+    <button class="thought box6" onclick="openBox('beboer')">Sjældent et nej</button>
+    <button class="thought box7" onclick="openBox('jer')">Jeg glæder mig til at møde jer</button>
+  </section>
+
+  <div id="overlay" class="overlay hidden" onclick="closeBox()">
+    <div class="focus-card" onclick="event.stopPropagation()">
+      <button class="close" onclick="closeBox()">×</button>
+      <img id="focusImage" src="" alt="" />
+      <div id="focusCaption" class="image-caption"></div>
+      <h2 id="focusTitle"></h2>
+      <p id="focusText"></p>
+    </div>
+  </div>
+
+  <div id="popup" class="popup">
+    Er I helt sikre på, at I ikke vælger mig? 😢
+  </div>
+
+  <div class="choice-buttons">
+    <button id="rejectBtn" class="reject" onclick="rejectTrick()">Afvis</button>
+    <button class="accept" onclick="chooseMe()">Vi vælger dig</button>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="../../script.js"></script>
+</body>
+</html>`;
+}
+
+kollektiver.forEach((kollektiv) => {
+  const folder = path.join(outputFolder, kollektiv.slug);
+
+  if (!fs.existsSync(folder)) {
+    fs.mkdirSync(folder, { recursive: true });
+  }
+
+  const configContent = `window.KOLLEKTIV_CONFIG = ${JSON.stringify(kollektiv, null, 4)};`;
+
+  fs.writeFileSync(path.join(folder, "config.js"), configContent, "utf8");
+  fs.writeFileSync(path.join(folder, "index.html"), makeHtml(kollektiv), "utf8");
+
+  console.log(`Created: kollektivet/${kollektiv.slug}/index.html`);
+});
+
+console.log("Done.");
