@@ -40,9 +40,7 @@ const boxes = {
         title: "Jeg elsker at bo sammen med andre mennesker",
         image: imagePath("julefrokost.jpeg"),
         caption: "Til julefrokost. Jeg ved ikke hvem hun er",
-        text: `Jeg elskede mine 5 år på Tietgenkollegiet.
-
-Men for mig var det ikke de store fester, der gjorde Tietgen særlig for mig. Misforstå mig ikke, jeg elsker alle Tietgens fester, hvad end det var TDC, køkkenfester eller festivalen. Men det særlige var at gå ud i køkkenet om morgenen og se mine køkkenmates allerede sidde i sofaen med en kop kaffe og snakke om alting og ingenting. De stunder er særlige for mig.${personligKommentar("faellesskab")}
+        text: `Jeg elskede mine 5 år på Tietgenkollegiet. Men for mig var det ikke de store fester, der gjorde Tietgen særlig for mig. Misforstå mig ikke, jeg elsker alle Tietgens fester, hvad end det var TDC, køkkenfester eller festivalen. Men det særlige var at gå ud i køkkenet om morgenen og se mine køkkenmates allerede sidde i sofaen med en kop kaffe og snakke om alting og ingenting. De stunder er særlige for mig.${personligKommentar("faellesskab")}
 `
     },
 
