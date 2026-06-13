@@ -2,13 +2,55 @@
     {
         "slug": "Havkikket",
         "navn": "Havkikket",
-        "tekst": "Det virker til, at I har et mega fedt kollektiv, hvor der altid er nogen at snakke med, hyggelige aktiviteter og masser af morgenkaffe. Så jeg håber virkelig at jeg kan få lov til at komme forbi",
+        "tekst": "Det virker til, at I har et mega fedt kollektiv, hvor der altid er nogen at snakke med til morgenkaffen, tonsvis af hygge stafetter og det lille havkik fra altanen. Så jeg håber virkelig at jeg kan få lov til at komme forbi og møde jer, måske til en fyraftensøl",
         "kommentarer": {
             "basal": "",
-            "faellesskab": "Jeg glæder mig til reality i stuen med Felicia, Haralds hot takes til morgenkaffe og forhåbentlig at få lov til at smage Lauras andefond i køkkenet",
+            "faellesskab": "Jeg glæder mig til reality i stuen med Felicia, Haralds hot takes til morgenkaffe og få lov til at smage Lauras andefond i køkkenet",
             "renlig": "",
             "mad": "Kartoflen er guddommelig",
             "noerd": "Jeg vil btw også sygt gerne prøve D&D med Harald",
+            "beboer": "",
+            "jer": ""
+        }
+    },
+    {
+        "slug": "Tzatziki",
+        "navn": "Tzatziki",
+        "tekst": "Det virker som et virkelig hyggeligt kollektiv med fællesskab og sjove interesser. Glæder mig til de spontane fællesspisninger, de små hverdagsstunder og at møde jer.",
+        "kommentarer": {
+            "basal": "",
+            "faellesskab": "Glæder mig til at høre Axels rejsehistorier til morgenkaffen, mens Sara pynter op og Andreas plinger instrumenterne",
+            "renlig": "",
+            "mad": "Andreas, du spiser bare min mad <3",
+            "noerd": "Og jeg glæder mig at komme tilbage i kajakken i KBH, hvis du vil med Jens? Og så kan jeg også mærke jeg skal til at starte til yoga med Celeste og Sara",
+            "beboer": "Ellers skal jeg nok hoppe med til Frederiks fest/fernisering/koncert/techno arrangement",
+            "jer": ""
+        }
+    },
+    {
+        "slug": "SLUTTET",
+        "navn": "SLUTTET",
+        "tekst": "Jeg glæder mig til at slængre mig i sofaen, stå i køkkenet og drikke kaffe med en af jer. Men jeg er sgu også klar på at komme ud af døren med jer til padel, en skål på Ølands Pub og selvfølgelig sommerhuset. I har virkelig et dejligt kollektiv!",
+        "kommentarer": {
+            "basal": "",
+            "faellesskab": "Glæder mig især til at tage på genbrugsstationen med Caroline.",
+            "renlig": "",
+            "mad": "Respekt til dåsefisk. Undervurderet!!!",
+            "noerd": "Julie, hjælp!!! Hjælp mig med at komme ud at løbe en tur.",
+            "beboer": "Men jeg sgu også altid frisk på at blive trukket afsted til spontane koncerter af Ida.",
+            "jer": ""
+        }
+    },
+    {
+        "slug": "Lille kollektiv i hjertet af Nørrebro",
+        "navn": "Lille kollektiv i hjertet af Nørrebro",
+        "tekst": "Jeg glæder mig til at sidde på altanen og spise et stykke af Stefanies kage. Men jeg er også helt klar på en koncert, en is i solen eller en omgang squash. I har skabt en lille hygegligt kollektiv, som jeg håber, at jeg kan være en del af.",
+        "kommentarer": {
+            "basal": "",
+            "faellesskab": "I virker som nogle rigtige dejlige naturmennesker, så jeg ville elske at få jer med til mine forældres Ødegård i Sverige, hvor vi kan sanke svampe, hugge brænde til pejsen og vandre i skoven",
+            "renlig": "",
+            "mad": "",
+            "noerd": "Jeg kan også begynde at strikke, så strikker Rune måske liiidt hurtigere end mig",
             "beboer": "",
             "jer": ""
         }

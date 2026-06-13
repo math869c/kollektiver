@@ -32,7 +32,7 @@ const boxes = {
         text: `• Jeg hedder Mathias
 • Jeg er 27 år
 • Jeg er lige flyttet hjem fra London
-• Jeg skal til at skrive en Ph.d. om pension
+• Jeg skal til at skrive en Ph.d. i økonomi
 • Jeg er sød og rar${personligKommentar("basal")}`
     },
 
@@ -40,7 +40,7 @@ const boxes = {
         title: "Jeg elsker at bo sammen med andre mennesker",
         image: imagePath("julefrokost.jpeg"),
         caption: "Til julefrokost. Jeg ved ikke hvem hun er",
-        text: `Jeg elskede mine 5 år på Tietgenkollegiet. Men for mig var det ikke de store fester, der gjorde Tietgen særlig for mig. Misforstå mig ikke, jeg elsker alle Tietgens fester, hvad end det var TDC, køkkenfester eller festivalen. Men det særlige var at gå ud i køkkenet om morgenen og se mine køkkenmates allerede sidde i sofaen med en kop kaffe og snakke om alting og ingenting. De stunder er særlige for mig.${personligKommentar("faellesskab")}
+        text: `Jeg elskede mine 5 år på Tietgenkollegiet. Men for mig var det ikke de store fester, der gjorde Tietgen særlig for mig. Misforstå mig ikke, jeg elsker alle Tietgens fester, hvad end det var TDC, køkkenfester eller festivalen. Men det særlige var at gå ud i køkkenet om morgenen og se mine køkkenmates allerede sidde i sofaen med en kop kaffe og snakke om alting og ingenting.${personligKommentar("faellesskab")}
 `
     },
 
@@ -75,7 +75,7 @@ Man lærer også:
         title: "Sjældent et nej",
         image: imagePath("frivillig.jpeg"),
         caption: "Mit ansvar til festivalen var pissoiret ...",
-        text: `Jeg var kendt for altid at være ude i køkkenet, lavede frivilligt arbejde på hele Tietgen og altid var klar på at arrangere ting, så vi kunne få folk ud ad døren. Derfor nominerede mine roomies mig også til årets beboer.${personligKommentar("beboer")}`
+        text: `Jeg var kendt for altid at være ude i køkkenet, at lave frivilligt arbejde på hele Tietgen og at jeg altid var klar på at arrangere ting, så vi kunne få folk ud ad døren. Derfor nominerede mine roomies mig også til årets beboer.${personligKommentar("beboer")}`
     },
 
     jer: {
